@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exper1ment | Web3 Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #cfefff, #e6f7ff);
+        }
+
+        /* HEADER */
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #0d47a1;
+        }
+
+        h2 {
+            color: #ff6a00;
+        }
+
+        /* SECTION */
+        .section {
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 12px;
+
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.6s;
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ROLE */
+        .role {
+            background: #f5fbff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .role-top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .time {
+            font-size: 13px;
+            color: gray;
+        }
+
+        /* BUTTON */
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* MODAL FIX */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.9);
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 🔥 IMPORTANT FIX */
+        .modal img {
+            max-width: 80%;
+        }
+
+        /* close button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Exper1ment 🇮🇳</h1>
+        <p>AI Data Annotator | Web3 Content Creator | AMA Speaker</p>
+        <p>Kolkata, India</p>
+    </div>
+
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            Detail-oriented Web3 enthusiast with 3+ years of experience in crypto,
+            community building and content creation.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Work Experience</h2>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    Bion Ambassador<br><span class="time">2025 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('bion.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Promoted Web3 platform through engaging content</li>
+                <li>Created beginner-friendly crypto threads</li>
+                <li>Helped grow community engagement</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    CoinDCX Maxis<br><span class="time">2025 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('maxis.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Educated users about crypto trading</li>
+                <li>Created informative content for beginners</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    NodeOps Contributor<br><span class="time">2024 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('nodeops.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Participated in Web3 campaigns</li>
+                <li>Engaged with community growth</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    Sverse Contributor<br><span class="time">2024 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('sverse.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Contributed to Web3 ecosystem initiatives</li>
+                <li>Participated in campaigns and engagement</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    Chiliz Creator<br><span class="time">2025 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('chilizproof.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Created SportFi related content</li>
+                <li>Educated users about Chiliz ecosystem</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="role-top">
+                <div>
+                    NRN Agents Creator<br><span class="time">2025 - Present</span>
+                </div>
+                <button class="btn" onclick="showProof('nrnproof.png')">Proof</button>
+            </div>
+            <ul>
+                <li>Created AI/Web3 content</li>
+                <li>Engaged with community insights</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>AI Data Annotation</h2>
+        <ul>
+            <li>Image analysis and data labeling</li>
+            <li>Evaluated AI outputs for accuracy</li>
+            <li>Worked on Outlier / Dreamliner projects</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Key Strengths</h2>
+        <ul>
+            <li>Strong understanding of crypto trends</li>
+            <li>Ability to simplify complex topics</li>
+            <li>Consistent content creation</li>
+            <li>Fast learner and adaptable</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Crypto & Web3 Knowledge</li>
+            <li>Content Creation (Twitter, Blogs)</li>
+            <li>Community Engagement</li>
+            <li>AI Tasking & Annotation</li>
+            <li>Basic Trading Knowledge</li>
+            <li>Communication (English, Hindi, Bengali)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p>Bachelor’s Degree in Arts (2017–2021) - Burdwan University</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>📞 only trusted person can get</p>
+        <p>📧 arupmahara45@gmail.com</p>
+        <p>Twitter: @imarup45</p>
+        <p>Telegram: @Arup3302</p>
+        <p>Discord: _exper1ment_3564</p>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img id="proofImg">
+    </div>
+
+    <script>
+
+        // SCROLL ANIMATION
+        const sections = document.querySelectorAll('.section');
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                if (sec.getBoundingClientRect().top < window.innerHeight * 0.85) {
+                    sec.classList.add('show');
+                }
+            });
+        });
+
+        // 🔥 FINAL FIX (NO BLINK ISSUE)
+        function showProof(img) {
+            const modal = document.getElementById("modal");
+            const proofImg = document.getElementById("proofImg");
+
+            modal.style.display = "flex";
+            proofImg.src = img;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>
